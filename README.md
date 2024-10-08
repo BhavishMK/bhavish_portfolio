@@ -1,2 +1,2 @@
-Personal portfolio for Student 🔥
+Personal portfolio for Students 🔥
 
