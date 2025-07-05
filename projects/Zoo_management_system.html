@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">Web-App</li>
+                        <li data-filter=".filter-project">Project</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <h4 class="text-center">Zoo Management System</h4>
+                    <div class="portfolio-wrap">
+                        <img src="website_images/Zoo_management_System.webp" class="img-fluid" alt="Zoo Management System">
+                        <div class="portfolio-info">
+                            <div class="portfolio-links">
+                                <a href="projects/Zoo_management_system.html" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Details -->
+    <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+            <h2 style="color:#12d640">Image Generator</h2>
+            <ul>
+                <li><strong>Tech Stack</strong>: Python, HTML, CSS, Bootstrap, GCP (Pub/Sub, Dataflow, Data Studio, GAE, BigQuery)</li>
+                <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/TwitterAnalysis" target="_blank">Project Link</a></li>
+            </ul>
+            <p>
+                Created a web-based elastic application to provide users with a detailed analysis of sentiment for the top 10 trending movies and songs using Google Cloud Platform services.
+            </p>
+            <p>
+                Implemented a Pub/Sub routine to fetch 1000 tweets at a time from Twitter; utilized Dataflow for resource autoscaling and dynamic work rebalancing, reducing overall response time by 50%; and stored data in BigQuery for efficient display in Google DataStudio.
+            </p>
+            <p>
+                Tested the scalability of the web application by generating 10,000 user requests with Apache Beam.
+            </p>
+        </div>
+    </div>
+
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
